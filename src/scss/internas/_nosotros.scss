@@ -1,0 +1,39 @@
+.contenido-nosotros {
+
+    @include tablet {
+        @include grid( 2, 5rem );
+        align-items: center;
+    }
+
+    .imagen {
+        margin-bottom: 5rem;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+        
+        img {
+            border: 3rem solid $blanco;
+            transform: rotate(-4deg);
+            -webkit-box-shadow: 4px 6px 6px -4px rgba(0,0,0,0.75);
+            -moz-box-shadow: 4px 6px 6px -4px rgba(0,0,0,0.75);
+            box-shadow: 4px 6px 6px -4px rgba(0,0,0,0.75);
+            
+            @include tablet {
+                min-height: 36rem;
+            }
+        }
+    }
+
+    .texto {
+        p {
+            line-height: 1.7;
+        }
+        .excelente-sabor {
+            margin: 0;
+            padding: 1rem;
+            border-left: .5rem solid $primario;
+            font-size: 2rem;
+        }
+    }
+}

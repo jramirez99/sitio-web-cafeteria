@@ -1,0 +1,52 @@
+.nuestro-menu {
+    // se puede poner mas de un baclground a lla vez
+    background-image: url(../../img/menu_arriba.svg), url(../../img/menu_abajo.svg), linear-gradient(to top, $primario, $primario );
+    background-repeat: no-repeat;
+    // tenemosmultiples imagenes y podemos posicionarlas en una sola linea separando por comas
+    background-position: center 5rem, center 97%, 100%;
+    background-size: 200%;
+    padding: 15rem 2rem 20rem 2rem;
+    
+    @include tablet {
+        background-position: center 5rem, center 92%, 100%;
+        background-size: 100%;
+        padding: 15rem 0 20rem 0;
+    }
+
+    @include laptop {
+        // comotenemos 3 backgrouns, los de 50% corresponde a cada imagen y el 100% corresponde al color de fon, porque si no cortaria el color de fondo
+        background-size: 50%, 60%, 100%;
+    }
+}
+
+.grid-menu {
+    @include tablet {
+        @include grid( 2, 5rem );
+    }
+}
+.menu {
+
+    h3 {
+        color: $blanco;
+    }
+    li {
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            color: $blanco;
+            font-size: 2.2rem;
+            line-height: 1.5;
+            margin: 0 0 2rem 0;
+
+            span {
+                display: block;
+                color: $secundario;
+            }
+        }
+        .precio {
+            font-size: 4rem;
+            font-weight: 700;
+        }
+    }
+}

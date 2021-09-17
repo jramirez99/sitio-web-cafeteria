@@ -1,0 +1,28 @@
+// base
+@import 'base/variables';
+@import 'base/globales';
+@import 'base/mixins';
+@import 'base/normalize';
+@import 'base/tipografia';
+@import 'base/utilidades';
+
+// header
+@import 'header/header';
+@import 'header/barra';
+@import 'header/navegacion';
+
+// inicio
+@import 'inicio/menu';
+@import 'inicio/iconos';
+@import 'inicio/contenidoPrincipal';
+@import 'inicio/galeria';
+@import 'inicio/testimoniales';
+
+// footer
+@import 'footer/footer';
+
+// internas
+@import 'internas/nosotros';
+@import 'internas/menu';
+@import 'internas/proceso';
+@import 'internas/contacto';

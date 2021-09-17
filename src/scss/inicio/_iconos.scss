@@ -1,0 +1,23 @@
+.iconos {
+    margin: 5rem 0 8rem 0;
+
+    .listado-iconos {
+        @include tablet {
+            @include grid( 3, 2rem );
+        }
+
+        li {
+            img {
+                width: 12rem;
+                margin: 0 auto;
+            }
+            
+            p {
+                color: $primario;
+                font-family: $fuenteCursiva;
+                font-size: 3.2rem;
+            }
+        }
+
+    }
+}

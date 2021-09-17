@@ -1,0 +1,65 @@
+.header {
+    padding: 5rem 0;
+    // para posicionar el background negro de fondo
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70rem;
+
+    @include tablet {
+        padding-top: 2.5rem;
+    }
+
+    // inserta el background negro de fondo
+    &::before {
+        content: '';
+        background-color: $negro;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: .6;
+    }
+
+    .contenido-header {
+        // para que traiga el contenido frente del bacground
+        position: relative;
+    } 
+
+}
+.texto-header {
+    h1 {
+        color: $blanco;
+        font-size: 3rem;
+        font-weight: 900;
+        margin-top: 5rem;
+        text-align: center;
+        text-transform: uppercase;
+        
+        @include tablet {
+            font-size: 4rem;
+            margin-top: 10rem;
+        }
+    }
+}
+
+// imagenes de fondo de cada pagina
+.header-inicio {
+    background-image: url(../../img/header_inicio.jpg);
+}
+.header-nosotros {
+    background-image: url(../../img/header_nosotros.jpg);
+}
+.header-proceso {
+    background-image: url(../../img/header_proceso.jpg);
+}
+.header-menu {
+    background-image: url(../../img/header_menu.jpg);
+}
+.header-galeria {
+    background-image: url(../../img/header_galeria.jpg);
+}
+.header-contacto {
+    background-image: url(../../img/header_contacto.jpg);
+}

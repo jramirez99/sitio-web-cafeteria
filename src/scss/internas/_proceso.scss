@@ -1,0 +1,42 @@
+.proceso-cafe {
+    margin-bottom: 3rem;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    @include tablet {
+        display: flex;
+        align-items: center;
+        gap: $separacion;
+    }
+
+    // even quiere decir todos los elemntos pare(2,4,6,etc) y odd los impares(1,3,5,etc)
+    &:nth-child(even) {
+        .texto {
+            order: -1;
+        }
+    }
+
+    .imagen, .texto {
+        flex: 1;
+    }
+
+    .texto {
+        margin-top: 1rem;
+
+        h3 {
+            color: $primario;
+            margin: 0;
+            text-align: left;
+
+            &::after {
+                content: '';
+                background-color: $secundario;
+                display: block;
+                height: 5px;
+                width: 50%;
+            }
+        }
+    }
+}

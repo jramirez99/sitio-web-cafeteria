@@ -1,0 +1,23 @@
+.nav-principal {
+    @include flexColumn;
+    margin-top: 3rem;
+    
+    @include tablet {
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 0;
+    }
+    a {
+        color: $blanco;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $secundario;
+        }
+    }
+
+}
